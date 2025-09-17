@@ -1,0 +1,50 @@
+/* Page level layout for snap scrolling */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.snap-container {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background: radial-gradient(1200px 600px at 60% -10%, #ffe082 0%, rgba(255, 224, 130, 0.6) 30%, rgba(255,255,255,0.9) 60%),
+              radial-gradient(900px 500px at 10% 0%, #fff59d 0%, rgba(255, 245, 157, 0.4) 35%, rgba(255,255,255,0.8) 60%),
+              #ffffff;
+}
+
+.snap-container.dark {
+  background: radial-gradient(1200px 600px at 60% -10%, #283593 0%, rgba(63,81,181,0.45) 30%, rgba(18,18,18,0.8) 60%),
+              radial-gradient(900px 500px at 10% 0%, #0d47a1 0%, rgba(13,71,161,0.35) 35%, rgba(18,18,18,0.7) 60%),
+              #121212;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.hero {
+  background: none;
+}
+
+/* Subtle material-like hover effects */
+.elevate-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.elevate-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.pill-nav { background: none; border: 0; backdrop-filter: none; border-radius: 0; padding: 12px; display: flex; justify-content: center; gap: 8px; }
+.pill-nav a { padding: 8px 12px; border-radius: 999px; color: inherit; text-decoration: none; font-weight: 600; }
+.pill-nav a:hover { background: rgba(0,0,0,0.06); }
