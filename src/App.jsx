@@ -190,7 +190,7 @@ function Contact() {
 }
 
 export default function App() {
-  const [mode, setMode] = useState('light')
+  const [mode, setMode] = useState('dark')
   const theme = useMemo(() => makeTheme(mode), [mode])
   const toggleMode = () => setMode((m) => (m === 'light' ? 'dark' : 'light'))
   return (
