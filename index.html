@@ -32,6 +32,13 @@
   .shot .appicon { width: 118px; height: 118px; border-radius: 26px; box-shadow: 0 12px 34px rgba(0,0,0,0.12); }
   .shot .ini { font-size: 46px; font-weight: 500; letter-spacing: -0.02em; color: #cfcfcf; }
   .shot .lbl { position: absolute; left: 22px; bottom: 18px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9a9a9a; letter-spacing: 0.04em; }
+  .applink { display: block; }
+  .applink .shot { transition: border-color .2s ease; }
+  .applink:hover .shot { border-color: #d4d4d4; }
+  .applink .appicon { transition: transform .25s ease; }
+  .applink:hover .appicon { transform: translateY(-4px); }
+  .store { display: inline-block; margin-top: 4px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #6a6a6a; text-decoration: none; border-bottom: 1px solid #d8d8d8; padding-bottom: 3px; transition: color .2s ease, border-color .2s ease; }
+  .store:hover { color: #0c0c0c; border-color: #0c0c0c; }
 
   .clink { color: #fbfbfa; text-decoration: none; border-bottom: 1px solid #444; padding-bottom: 7px; transition: border-color .2s ease; }
   .clink:hover { border-color: #fbfbfa; }
@@ -118,13 +125,15 @@
 
     <!-- TokenB -->
     <article>
-      <div class="shot"><img class="appicon" src="assets/tokenb.jpg" alt="TokenB app icon"><span class="lbl">TokenB — crypto wallet · Google Play</span></div>
+      <a class="applink" href="https://play.google.com/store/apps/details?id=net.token13.wallet" target="_blank" rel="noopener">
+        <div class="shot"><img class="appicon" src="assets/tokenb.jpg" alt="TokenB app icon"><span class="lbl">TokenB — crypto wallet · Google Play</span></div>
+      </a>
       <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
         <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">TokenB Wallet</h3>
         <span class="mono" style="font-size:13px; color:#9a9a9a;">2025 →</span>
       </div>
       <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Multi-chain, non-custodial crypto wallet with cross-chain swaps and real-time blockchain updates. Built the secure key layer with AES/RSA and Android Keystore, and led a team of 3 through architecture and code reviews.</p>
-      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a; margin-bottom:22px;">
         <span class="tag">Kotlin</span>
         <span class="tag">Coroutines</span>
         <span class="tag">Hilt</span>
@@ -132,23 +141,27 @@
         <span class="tag">Retrofit</span>
         <span class="tag">Keystore</span>
       </div>
+      <a class="store" href="https://play.google.com/store/apps/details?id=net.token13.wallet" target="_blank" rel="noopener">View on Google Play ↗</a>
     </article>
 
     <!-- Marks & Spencer -->
     <article>
-      <div class="shot"><img class="appicon" src="assets/mands.png" alt="Marks &amp; Spencer app icon"><span class="lbl">Marks &amp; Spencer — e-commerce · Google Play</span></div>
+      <a class="applink" href="https://play.google.com/store/apps/details?id=com.afg.mns.retail" target="_blank" rel="noopener">
+        <div class="shot"><img class="appicon" src="assets/mands.png" alt="M&amp;S MENA / Asia app icon"><span class="lbl">M&amp;S MENA · Asia — e-commerce · Google Play</span></div>
+      </a>
       <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
         <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">Marks &amp; Spencer</h3>
         <span class="mono" style="font-size:13px; color:#9a9a9a;">2022 – 24</span>
       </div>
-      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Flagship shopping app with real-time inventory and personalized recommendations. Drove security best-practices to a 99% crash-free rate and helped migrate the legacy native app to Flutter.</p>
-      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Flagship M&amp;S shopping app across MENA and Asia markets — real-time inventory and personalized recommendations. Drove security best-practices to a 99% crash-free rate and helped migrate the legacy native app to Flutter.</p>
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a; margin-bottom:22px;">
         <span class="tag">Kotlin</span>
         <span class="tag">Room</span>
         <span class="tag">Retrofit</span>
         <span class="tag">Coroutines</span>
         <span class="tag">Flutter</span>
       </div>
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.afg.mns.retail" target="_blank" rel="noopener">View on Google Play ↗</a>
     </article>
 
     <!-- ZIRO Ride -->
