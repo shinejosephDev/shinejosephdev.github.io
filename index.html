@@ -1,16 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shine Joseph — Mobile Developer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shine Joseph — Senior Android Engineer</title>
+<meta name="description" content="Shine Joseph — Senior Android Developer & Team Lead. 9+ years building secure, high-performance Kotlin apps across crypto, e-commerce and ride-hailing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #ffffff; color: #0c0c0c; font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
+  ::selection { background: #0c0c0c; color: #fff; }
+  a { -webkit-tap-highlight-color: transparent; }
+
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .rule { height: 1px; background: #ededed; }
+
+  .navlink { color: #8a8a8a; text-decoration: none; transition: color .2s ease; }
+  .navlink:hover { color: #0c0c0c; }
+  .navcta { color: #0c0c0c; text-decoration: none; border: 1px solid #0c0c0c; padding: 8px 16px; border-radius: 100px; transition: background .2s ease, color .2s ease; }
+  .navcta:hover { background: #0c0c0c; color: #fff; }
+
+  .tag { border: 1px solid #e6e6e6; padding: 5px 11px; border-radius: 100px; }
+  .stackpill { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #1a1a1a; border: 1px solid #e2e2e2; padding: 11px 17px; border-radius: 100px; transition: border-color .2s ease, color .2s ease; }
+  .stackpill:hover { border-color: #0c0c0c; }
+
+  .shot { width: 100%; aspect-ratio: 4/3; margin-bottom: 30px; border: 1px solid #ededed; background: #f6f6f6; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; }
+  .shot .ini { font-size: 46px; font-weight: 500; letter-spacing: -0.02em; color: #d2d2d2; }
+  .shot .lbl { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9a9a9a; letter-spacing: 0.04em; }
+
+  .clink { color: #fbfbfa; text-decoration: none; border-bottom: 1px solid #444; padding-bottom: 7px; transition: border-color .2s ease; }
+  .clink:hover { border-color: #fbfbfa; }
+  .cbtn { display: inline-flex; align-items: center; gap: 10px; color: #0c0c0c; background: #fbfbfa; text-decoration: none; padding: 13px 22px; border-radius: 100px; font-family: 'JetBrains Mono', monospace; font-size: 15px; transition: transform .15s ease, opacity .2s ease; }
+  .cbtn:hover { transform: translateY(-2px); opacity: .9; }
+
+  @media (max-width: 900px) {
+    .pad { padding-left: 26px !important; padding-right: 26px !important; }
+    .grid2 { grid-template-columns: 1fr !important; gap: 48px !important; }
+    .gridL { grid-template-columns: 1fr !important; gap: 22px !important; }
+    .hero-h { font-size: 60px !important; }
+    .hero-sub { text-align: left; }
+    .about-p { font-size: 26px !important; }
+    .contact-h { font-size: 52px !important; }
+    .nav-inner { padding: 18px 26px !important; }
+    .nav-links { gap: 20px !important; }
+    .hero-meta { flex-wrap: wrap; gap: 10px !important; }
+  }
+  @media (max-width: 560px) {
+    .nav-hide { display: none !important; }
+    .hero-h { font-size: 44px !important; }
+    .stat-num { font-size: 30px !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header style="position:sticky; top:0; z-index:20; background:rgba(255,255,255,0.86); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid #efefef;">
+  <div class="wrap nav-inner" style="padding:22px 48px; display:flex; justify-content:space-between; align-items:center;">
+    <a href="#top" class="mono" style="font-size:13px; letter-spacing:0.06em; color:#0c0c0c; text-decoration:none; font-weight:500;">SHINE JOSEPH</a>
+    <nav class="mono nav-links" style="display:flex; align-items:center; gap:32px; font-size:13px; letter-spacing:0.02em;">
+      <a href="#work" class="navlink nav-hide">work</a>
+      <a href="#about" class="navlink nav-hide">about</a>
+      <a href="#stack" class="navlink nav-hide">stack</a>
+      <a href="#contact" class="navcta">contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="top" class="wrap pad" style="padding:130px 48px 140px;">
+  <div class="mono hero-meta" style="display:flex; align-items:center; gap:16px; font-size:13px; color:#9a9a9a; letter-spacing:0.14em; margin-bottom:48px;">
+    <span>SENIOR ANDROID ENGINEER — 9+ YEARS</span>
+    <span style="display:inline-flex; align-items:center; gap:8px; color:#0c0c0c;"><span style="width:7px; height:7px; border-radius:50%; background:#0c0c0c;"></span>AVAILABLE</span>
+  </div>
+  <h1 class="hero-h" style="margin:0; font-size:108px; line-height:0.96; font-weight:500; letter-spacing:-0.035em;">Android<br>engineering,<br>done quietly<br>well.</h1>
+  <div class="hero-sub" style="display:flex; justify-content:flex-end; margin-top:60px;">
+    <p style="margin:0; font-size:23px; line-height:1.55; color:#3a3a3a; max-width:580px;">I'm Shine Joseph — a Kotlin engineer and team lead based in Dubai, shipping secure crypto, retail and ride-hailing apps. Nine years of clean architecture, calm releases, and mentoring the engineers around me.</p>
+  </div>
+</section>
+
+<div class="rule wrap"></div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="wrap pad grid2" style="padding:120px 48px; display:grid; grid-template-columns:220px 1fr; gap:60px;">
+  <div class="mono" style="font-size:13px; color:#9a9a9a; letter-spacing:0.1em;">(ABOUT)</div>
+  <div>
+    <p class="about-p" style="margin:0 0 40px; font-size:35px; line-height:1.38; font-weight:400; letter-spacing:-0.012em; max-width:800px;">I turn ambiguous product ideas into shippable Android apps — owning architecture, security and the small details that make an app feel effortless. Clean Architecture, test-backed, security-first, and easy for the next engineer to read.</p>
+    <div class="mono gridL" style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px; max-width:640px;">
+      <div>
+        <div class="stat-num" style="font-size:38px; font-weight:500; letter-spacing:-0.02em; font-family:'Space Grotesk',sans-serif;">9+</div>
+        <div style="font-size:12px; color:#9a9a9a; letter-spacing:0.06em; margin-top:6px;">YEARS SHIPPING</div>
+      </div>
+      <div>
+        <div class="stat-num" style="font-size:38px; font-weight:500; letter-spacing:-0.02em; font-family:'Space Grotesk',sans-serif;">99%</div>
+        <div style="font-size:12px; color:#9a9a9a; letter-spacing:0.06em; margin-top:6px;">CRASH-FREE RATE</div>
+      </div>
+      <div>
+        <div class="stat-num" style="font-size:38px; font-weight:500; letter-spacing:-0.02em; font-family:'Space Grotesk',sans-serif;">3</div>
+        <div style="font-size:12px; color:#9a9a9a; letter-spacing:0.06em; margin-top:6px;">ENGINEERS LED</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule wrap"></div>
+
+<!-- ===== WORK ===== -->
+<section id="work" class="wrap pad" style="padding:120px 48px 70px;">
+  <div class="mono" style="font-size:13px; color:#9a9a9a; letter-spacing:0.1em; margin-bottom:70px;">(SELECTED WORK)</div>
+
+  <div class="grid2" style="display:grid; grid-template-columns:1fr 1fr; gap:64px;">
+
+    <!-- TokenB -->
+    <article>
+      <div class="shot"><span class="ini">TB</span><span class="lbl">TokenB — crypto wallet</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+        <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">TokenB Wallet</h3>
+        <span class="mono" style="font-size:13px; color:#9a9a9a;">2025 →</span>
+      </div>
+      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Multi-chain, non-custodial crypto wallet with cross-chain swaps and real-time blockchain updates. Built the secure key layer with AES/RSA and Android Keystore, and led a team of 3 through architecture and code reviews.</p>
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+        <span class="tag">Kotlin</span>
+        <span class="tag">Coroutines</span>
+        <span class="tag">Hilt</span>
+        <span class="tag">Room</span>
+        <span class="tag">Retrofit</span>
+        <span class="tag">Keystore</span>
+      </div>
+    </article>
+
+    <!-- Marks & Spencer -->
+    <article>
+      <div class="shot"><span class="ini">M&amp;S</span><span class="lbl">Marks &amp; Spencer — e-commerce</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+        <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">Marks &amp; Spencer</h3>
+        <span class="mono" style="font-size:13px; color:#9a9a9a;">2022 – 24</span>
+      </div>
+      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Flagship shopping app with real-time inventory and personalized recommendations. Drove security best-practices to a 99% crash-free rate and helped migrate the legacy native app to Flutter.</p>
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+        <span class="tag">Kotlin</span>
+        <span class="tag">Room</span>
+        <span class="tag">Retrofit</span>
+        <span class="tag">Coroutines</span>
+        <span class="tag">Flutter</span>
+      </div>
+    </article>
+
+    <!-- ZIRO Ride -->
+    <article>
+      <div class="shot"><span class="ini">ZR</span><span class="lbl">ZIRO Ride — ride-hailing</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+        <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">ZIRO Ride</h3>
+        <span class="mono" style="font-size:13px; color:#9a9a9a;">2018 – 21</span>
+      </div>
+      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">Ride-hailing app with a payment SDK, AR navigation and live video streaming. Delivered real-time tracking over Socket.IO with background and location services, on MVVM + Clean Architecture.</p>
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+        <span class="tag">Kotlin</span>
+        <span class="tag">MVVM</span>
+        <span class="tag">Socket.IO</span>
+        <span class="tag">Payment SDK</span>
+        <span class="tag">AR</span>
+      </div>
+    </article>
+
+    <!-- Newsreels -->
+    <article>
+      <div class="shot"><span class="ini">NR</span><span class="lbl">Newsreels — media</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+        <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">Newsreels</h3>
+        <span class="mono" style="font-size:13px; color:#9a9a9a;">side project</span>
+      </div>
+      <p style="margin:0 0 20px; font-size:17px; line-height:1.62; color:#4a4a4a;">News aggregator that condenses articles into short, video-first formats. Smooth playback with ExoPlayer, efficient loading with the Paging library, and real-time state via Kotlin Flow.</p>
+      <div class="mono" style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px; color:#6a6a6a;">
+        <span class="tag">Kotlin</span>
+        <span class="tag">ExoPlayer</span>
+        <span class="tag">Paging</span>
+        <span class="tag">Flow</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="rule wrap" style="margin-top:50px;"></div>
+
+<!-- ===== STACK ===== -->
+<section id="stack" class="wrap pad grid2" style="padding:120px 48px; display:grid; grid-template-columns:220px 1fr; gap:60px;">
+  <div class="mono" style="font-size:13px; color:#9a9a9a; letter-spacing:0.1em;">(STACK)</div>
+  <div style="display:flex; flex-wrap:wrap; gap:14px 12px; max-width:820px;">
+    <span class="stackpill">Kotlin</span>
+    <span class="stackpill">Java</span>
+    <span class="stackpill">Jetpack Compose</span>
+    <span class="stackpill">Coroutines / Flow</span>
+    <span class="stackpill">MVVM · Clean Architecture</span>
+    <span class="stackpill">Hilt · Dagger</span>
+    <span class="stackpill">Room · Paging</span>
+    <span class="stackpill">Retrofit · OkHttp · Socket.IO</span>
+    <span class="stackpill">RxJava</span>
+    <span class="stackpill">JUnit · Espresso · Mockito</span>
+    <span class="stackpill">CI/CD · GitHub Actions · Jenkins</span>
+    <span class="stackpill">Gradle · ProGuard/R8</span>
+    <span class="stackpill">Android Keystore · AES/RSA</span>
+    <span class="stackpill">Play Console</span>
+  </div>
+</section>
+
+<!-- ===== CONTACT (dark) ===== -->
+<section id="contact" style="background:#0c0c0c; color:#fbfbfa;">
+  <div class="wrap pad" style="padding:130px 48px 140px;">
+    <div class="mono" style="font-size:13px; color:#7a7a7a; letter-spacing:0.14em; margin-bottom:44px;">(CONTACT)</div>
+    <h2 class="contact-h" style="margin:0 0 20px; font-size:80px; line-height:0.98; font-weight:500; letter-spacing:-0.03em;">Let's build<br>something solid.</h2>
+    <p style="margin:0 0 40px; font-size:20px; color:#9a9a9a; max-width:520px; line-height:1.55;">Open to senior Android roles and interesting contract work. Fastest way to reach me is email.</p>
+    <div style="margin-bottom:56px;">
+      <a href="Shine_Joseph_Resume.pdf" download class="cbtn">Download résumé <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="mono" style="display:flex; gap:40px; flex-wrap:wrap; font-size:16px;">
+      <a href="mailto:shinejoseph@outlook.com" class="clink">shinejoseph@outlook.com</a>
+      <a href="https://github.com/shinejosephDev" target="_blank" rel="noopener" class="clink">GitHub ↗</a>
+      <a href="https://linkedin.com/in/shynejocef" target="_blank" rel="noopener" class="clink">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="wrap pad mono" style="padding:28px 48px; display:flex; justify-content:space-between; font-size:12px; color:#9a9a9a;">
+  <span>© 2026 Shine Joseph</span>
+  <span>Built with Kotlin &amp; care</span>
+</footer>
+
+</body>
 </html>
