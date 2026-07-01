@@ -28,9 +28,10 @@
   .stackpill { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #1a1a1a; border: 1px solid #e2e2e2; padding: 11px 17px; border-radius: 100px; transition: border-color .2s ease, color .2s ease; }
   .stackpill:hover { border-color: #0c0c0c; }
 
-  .shot { width: 100%; aspect-ratio: 4/3; margin-bottom: 30px; border: 1px solid #ededed; background: #f6f6f6; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; }
-  .shot .ini { font-size: 46px; font-weight: 500; letter-spacing: -0.02em; color: #d2d2d2; }
-  .shot .lbl { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9a9a9a; letter-spacing: 0.04em; }
+  .shot { position: relative; width: 100%; aspect-ratio: 4/3; margin-bottom: 30px; border: 1px solid #ededed; background: #f6f6f6; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .shot .appicon { width: 118px; height: 118px; border-radius: 26px; box-shadow: 0 12px 34px rgba(0,0,0,0.12); }
+  .shot .ini { font-size: 46px; font-weight: 500; letter-spacing: -0.02em; color: #cfcfcf; }
+  .shot .lbl { position: absolute; left: 22px; bottom: 18px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #9a9a9a; letter-spacing: 0.04em; }
 
   .clink { color: #fbfbfa; text-decoration: none; border-bottom: 1px solid #444; padding-bottom: 7px; transition: border-color .2s ease; }
   .clink:hover { border-color: #fbfbfa; }
@@ -117,7 +118,7 @@
 
     <!-- TokenB -->
     <article>
-      <div class="shot"><span class="ini">TB</span><span class="lbl">TokenB — crypto wallet</span></div>
+      <div class="shot"><img class="appicon" src="assets/tokenb.jpg" alt="TokenB app icon"><span class="lbl">TokenB — crypto wallet · Google Play</span></div>
       <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
         <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">TokenB Wallet</h3>
         <span class="mono" style="font-size:13px; color:#9a9a9a;">2025 →</span>
@@ -135,7 +136,7 @@
 
     <!-- Marks & Spencer -->
     <article>
-      <div class="shot"><span class="ini">M&amp;S</span><span class="lbl">Marks &amp; Spencer — e-commerce</span></div>
+      <div class="shot"><img class="appicon" src="assets/mands.png" alt="Marks &amp; Spencer app icon"><span class="lbl">Marks &amp; Spencer — e-commerce · Google Play</span></div>
       <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
         <h3 style="margin:0; font-size:34px; font-weight:500; letter-spacing:-0.015em;">Marks &amp; Spencer</h3>
         <span class="mono" style="font-size:13px; color:#9a9a9a;">2022 – 24</span>
